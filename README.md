@@ -1,4 +1,4 @@
-
+<img width="667" height="341" alt="image" src="https://github.com/user-attachments/assets/87404713-7885-438f-80de-50cadcc62ab3" /><img width="1178" height="568" alt="image" src="https://github.com/user-attachments/assets/90c5a534-ec4f-4ab2-ace9-9e7686c7ebdb" />
 # Class Management App – Backend
 
 ## Introduction
@@ -48,11 +48,10 @@ The backend is built using a **microservices architecture**, with each service r
 Open **four terminal windows** and run the following commands (one per terminal):
 
 ```bash
-node ./backend/services/auth/app.js
-node ./backend/services/user/app.js
-node ./backend/services/lesson/app.js
-node ./backend/services/chat/app.js
+cd ./backend/services/auth
+node app.js
 ```
+Fimilar for user, lesson, and chat service
 
 ### 4. Start the Frontend
 
@@ -80,12 +79,15 @@ There are **three login methods** available:
    - Example credentials (Instructor account):  
      - Username: `tranquoccuong`  
      - Password: `abc`
+<img width="1180" height="635" alt="image" src="https://github.com/user-attachments/assets/65ee2a30-3c1a-4f78-a9ec-6a978b2b78b5" />
 
 2. **Phone Number + OTP**  
    - Enter the phone number, and the OTP will appear in the terminal running the `auth` service.
+<img width="1178" height="551" alt="image" src="https://github.com/user-attachments/assets/b79a5b5f-fd4f-4319-852c-f685afd256a4" />
 
 3. **Email + OTP**  
    - Similar to the phone login, OTP will be printed in the terminal.
+<img width="1178" height="568" alt="image" src="https://github.com/user-attachments/assets/2d911a24-7b63-4e03-aef2-3229b9f0828e" />
 
 ## Instructor Flow
 
@@ -95,10 +97,44 @@ Once logged in as an instructor, you can add a student to the system. The studen
 > For phone verification and registration, only **one phone number** is supported due to Twilio's free-tier limitation.  
 > Use: `+18777804236` (Canada region code +1)
 
-If you have any questions or need help running the app, feel free to reach out.
 
-<img width="559" height="501" alt="image" src="https://github.com/user-attachments/assets/f4066056-c3e9-4792-96d4-fdde8bdb950c" />
-<img width="537" height="395" alt="image" src="https://github.com/user-attachments/assets/ada3ce23-962e-423f-a326-d7f38495542d" />
-<img width="508" height="349" alt="image" src="https://github.com/user-attachments/assets/8c556c0b-c869-485a-970a-4258264748f5" />
+
+## Dashboard Overview
+You log in using the instructor account, you will be redirected to the **Dashboard** page.
+<img width="995" height="590" alt="image" src="https://github.com/user-attachments/assets/e8b51e09-e275-4a69-bdde-f936323a1151" />
+
+
+### Key Features
+
+- **Add Student**: Click the "Add Student" button to add a new student to the system.
+<img width="997" height="595" alt="image" src="https://github.com/user-attachments/assets/5229033c-afce-4979-b3dc-19ad78403b1a" />
+
+- **Student Invitation**: After being added, the student will automatically receive an email containing a registration link.
+<img width="667" height="341" alt="image" src="https://github.com/user-attachments/assets/261789f4-d38c-4fd7-a1dd-56c364608534" />
+
+- **Account Creation**: When the student clicks the link, they will be redirected to a phone number verification page, followed by a form to enter their username and password.
+<img width="994" height="451" alt="image" src="https://github.com/user-attachments/assets/69ce7977-f64c-4ae3-931a-70c8a60f5205" />
+<img width="994" height="592" alt="image" src="https://github.com/user-attachments/assets/417447b1-483f-4a23-8584-0c59687a09d9" />
+
+  - Passwords are securely **hashed** in the database to ensure user security.
+<img width="1020" height="544" alt="image" src="https://github.com/user-attachments/assets/cac5c01e-c54f-4a39-ad3a-2cdb8a9e3e97" />
+
+- **Lesson Management**: The instructor can view which lesson each student is currently enrolled in and track their progress (whether they have completed the lesson or not).
+<img width="1031" height="562" alt="image" src="https://github.com/user-attachments/assets/661f0a1b-0174-48a9-a8db-a01a8357c28f" />
+
+- **Chat Functionality**: An instructor can click the chat button to view the list of students and open a chatbox to communicate with them directly. But it's not really word stably
+<img width="855" height="487" alt="image" src="https://github.com/user-attachments/assets/0d92b06c-589a-48c5-9e82-35f00118808e" />
+<img width="1011" height="548" alt="image" src="https://github.com/user-attachments/assets/2187b2a3-1a02-4607-8294-934604ef6396" />
+
+Back to Backend, api document I saved in this Google Doc. If you want to check my api, please access this:
+https://docs.google.com/document/d/1Wx8SMe91fereyV-xictBxUaVFkEiWtxg1t1HpqiMTFs/edit?usp=sharing
+
+## Final Notes
+This website is still missing many important features and does not fully meet the challenge requirements. However, I’ve approached this task with a serious attitude and invested genuine effort into its development.
+
+Thank you so much for reviewing my work.
+
+If you have any questions or need help running the app, feel free to reach out.
+Contact: vytq3107forwork@gmail.com
 
 
