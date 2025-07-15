@@ -1,4 +1,3 @@
-<img width="667" height="341" alt="image" src="https://github.com/user-attachments/assets/87404713-7885-438f-80de-50cadcc62ab3" /><img width="1178" height="568" alt="image" src="https://github.com/user-attachments/assets/90c5a534-ec4f-4ab2-ace9-9e7686c7ebdb" />
 # Class Management App – Backend
 
 ## Introduction
