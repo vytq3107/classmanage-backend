@@ -96,3 +96,8 @@ Once logged in as an instructor, you can add a student to the system. The studen
 > Use: `+18777804236` (Canada region code +1)
 
 If you have any questions or need help running the app, feel free to reach out.
+
+
+<img width="1918" height="994" alt="image" src="https://github.com/user-attachments/assets/3a8440f8-5782-49a5-9376-906dc6602b14" />
+<img width="1902" height="989" alt="image" src="https://github.com/user-attachments/assets/8e767863-2e5a-417d-80a8-c8f466065dce" />
+
