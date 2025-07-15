@@ -13,6 +13,55 @@ The project is divided into two main parts:
 - **Backend** (this repository): https://github.com/vytq3107/classmanage-backend  
 - **Frontend**: https://github.com/vytq3107/classmanage-frontend  
 
+Describe about structure:
+Technology I use in this challege is
+Backend: NodeJS (Express), Firebase Realtime, Twilio, socket.io, nodemailer, EventEmitter, develop in Microservice Structure.
+Frontend: NextJS, shadcn UI, ReactJS Toast Notification, socket client, framer-motion, lucide icon.
+
+Backend Structure:
+backend/
+│
+├── config/							//Config db, twilio
+│   ├── key/
+│
+├── middleware/						//Check role, check own, check input, body
+│
+├── services/
+│   ├── auth/
+│   │   ├── app						//server
+│   │   ├── controller				//Process logics, manage status and respone message
+│   │   ├── model					//Connect to db to get data
+│   │   ├── route					//Define apis and apply middlewares
+│   ├── chat/
+│   ├── lesson/
+│   └── user/
+│
+├── temp/                     
+│
+├── .env                        
+
+                    
+
+Frontend Structure
+frontend/
+├── app/							//Routing
+│   ├── auth			
+│   ├── login
+│   ├── dashboard
+│   │   ├── instructor
+│   │   ├── student
+│   ├── chat
+│   ├── profile
+│   ├── layout.tsx
+│   ├── globals.css
+│   └── error.tsx
+├── features/						//Get data from services put in to logic of components 
+├── components/					//Components like forms, button, icon, ...
+├── services/						//Connect to api to recieve data
+├── utils/
+
+
+
 > ⚠️ These instructions are written for **Windows** users with **Node.js already installed**.
 
 ## Getting Started
