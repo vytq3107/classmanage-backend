@@ -1,6 +1,6 @@
 const admin = require('firebase-admin');
 
-const serviceAccount = require('./key/classroom-database-d5341-firebase-adminsdk-fbsvc-1340bb99f0.json');
+const serviceAccount = require('./key/classroom-database-d5341-firebase-adminsdk-fbsvc-a87b610320.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
