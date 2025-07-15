@@ -97,7 +97,8 @@ Once logged in as an instructor, you can add a student to the system. The studen
 
 If you have any questions or need help running the app, feel free to reach out.
 
+<img width="559" height="501" alt="image" src="https://github.com/user-attachments/assets/f4066056-c3e9-4792-96d4-fdde8bdb950c" />
+<img width="537" height="395" alt="image" src="https://github.com/user-attachments/assets/ada3ce23-962e-423f-a326-d7f38495542d" />
+<img width="508" height="349" alt="image" src="https://github.com/user-attachments/assets/8c556c0b-c869-485a-970a-4258264748f5" />
 
-<img width="1918" height="994" alt="image" src="https://github.com/user-attachments/assets/3a8440f8-5782-49a5-9376-906dc6602b14" />
-<img width="1902" height="989" alt="image" src="https://github.com/user-attachments/assets/8e767863-2e5a-417d-80a8-c8f466065dce" />
 
