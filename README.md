@@ -18,47 +18,7 @@ Technology I use in this challege is
 Backend: NodeJS (Express), Firebase Realtime, Twilio, socket.io, nodemailer, EventEmitter, develop in Microservice Structure.
 Frontend: NextJS, shadcn UI, ReactJS Toast Notification, socket client, framer-motion, lucide icon.
 
-Backend Structure:
-backend/
-│
-├── config/							//Config db, twilio
-│   ├── key/
-│
-├── middleware/						//Check role, check own, check input, body
-│
-├── services/
-│   ├── auth/
-│   │   ├── app						//server
-│   │   ├── controller				//Process logics, manage status and respone message
-│   │   ├── model					//Connect to db to get data
-│   │   ├── route					//Define apis and apply middlewares
-│   ├── chat/
-│   ├── lesson/
-│   └── user/
-│
-├── temp/                     
-│
-├── .env                        
-
-                    
-
-Frontend Structure
-frontend/
-├── app/							//Routing
-│   ├── auth			
-│   ├── login
-│   ├── dashboard
-│   │   ├── instructor
-│   │   ├── student
-│   ├── chat
-│   ├── profile
-│   ├── layout.tsx
-│   ├── globals.css
-│   └── error.tsx
-├── features/						//Get data from services put in to logic of components 
-├── components/					//Components like forms, button, icon, ...
-├── services/						//Connect to api to recieve data
-├── utils/
+<pre lang="markdown"> <code> ### Backend Structure ``` backend/ ├── config/ # Config db, twilio ├── key/ ├── middleware/ # Check role, check own, check input, body ├── services/ │ ├── auth/ │ │ ├── app # Server entry point │ │ ├── controller # Process logic, manage status and response message │ │ ├── model # Connect to DB and get data │ │ ├── route # Define APIs and apply middlewares │ ├── chat/ │ ├── lesson/ │ └── user/ ├── temp/ ├── .env ``` ### Frontend Structure ``` frontend/ ├── app/ # Routing │ ├── auth/ │ ├── login/ │ ├── dashboard/ │ │ ├── instructor/ │ │ ├── student/ │ ├── chat/ │ ├── profile/ │ ├── layout.tsx │ ├── globals.css │ └── error.tsx ├── features/ # Logic layer: fetch data from services ├── components/ # UI components: forms, buttons, icons, etc. ├── services/ # API integration ├── utils/ ``` </code> </pre>
 
 
 
