@@ -18,7 +18,11 @@ Technology I use in this challege is
 Backend: NodeJS (Express), Firebase Realtime, Twilio, socket.io, nodemailer, EventEmitter, develop in Microservice Structure.
 Frontend: NextJS, shadcn UI, ReactJS Toast Notification, socket client, framer-motion, lucide icon.
 
-<pre lang="markdown"> <code> ### Backend Structure ``` backend/ ├── config/ # Config db, twilio ├── key/ ├── middleware/ # Check role, check own, check input, body ├── services/ │ ├── auth/ │ │ ├── app # Server entry point │ │ ├── controller # Process logic, manage status and response message │ │ ├── model # Connect to DB and get data │ │ ├── route # Define APIs and apply middlewares │ ├── chat/ │ ├── lesson/ │ └── user/ ├── temp/ ├── .env ``` ### Frontend Structure ``` frontend/ ├── app/ # Routing │ ├── auth/ │ ├── login/ │ ├── dashboard/ │ │ ├── instructor/ │ │ ├── student/ │ ├── chat/ │ ├── profile/ │ ├── layout.tsx │ ├── globals.css │ └── error.tsx ├── features/ # Logic layer: fetch data from services ├── components/ # UI components: forms, buttons, icons, etc. ├── services/ # API integration ├── utils/ ``` </code> </pre>
+Backend Structure:
+<img width="1127" height="422" alt="image" src="https://github.com/user-attachments/assets/6ea5a3c5-9007-4157-8011-db784a10c54a" />
+
+Frontend Structure:
+<img width="1122" height="355" alt="image" src="https://github.com/user-attachments/assets/b58d2303-d14a-47e5-bf47-6f729df07194" />
 
 
 
