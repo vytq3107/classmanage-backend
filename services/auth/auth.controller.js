@@ -21,7 +21,8 @@ const authController = {
       const code = generateCode();
       await authModel.saveAccessCode(identifier, code, type, "register");
       await sendSMS(identifier, `Your verification code is: ${code}`);
-
+      console.log("OTP code: ", code);
+      
       res.status(200).json({ message: "OTP has been sent via SMS." });
     } catch (err) {
       console.error("createAccessCode error:", err);
@@ -108,6 +109,7 @@ const authController = {
       }
 
       const code = generateCode();
+      console.log("OTP code: ", code);
       await authModel.saveAccessCode(identifier, code, type, "login");
 
       if (type === "phone") {
@@ -116,6 +118,7 @@ const authController = {
       } else if (type === "email") {
         const html = `<p>Hello,</p><p>Your login OTP is: <strong>${code}</strong></p>`;
         await sendEmail(identifier, "Login OTP", html);
+        
         res.status(200).json({ message: "Login OTP sent via email." });
       } else {
         res.status(400).json({ message: "Invalid verification type." });
