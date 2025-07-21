@@ -91,15 +91,18 @@ There are **three login methods** available:
    - Example credentials (Instructor account):  
      - Username: `tranquoccuong`  
      - Password: `abc`
-<img width="1180" height="635" alt="image" src="https://github.com/user-attachments/assets/65ee2a30-3c1a-4f78-a9ec-6a978b2b78b5" />
+<img width="1010" height="527" alt="image" src="https://github.com/user-attachments/assets/b4c99895-a126-4e67-8bff-a38f51efd1e1" />
+
 
 2. **Phone Number + OTP**  
    - Enter the phone number, and the OTP will appear in the terminal running the `auth` service.
-<img width="1178" height="551" alt="image" src="https://github.com/user-attachments/assets/b79a5b5f-fd4f-4319-852c-f685afd256a4" />
+<img width="1005" height="515" alt="image" src="https://github.com/user-attachments/assets/d87138b1-1f98-4e5b-8aa3-ca7389a871eb" />
+
 
 3. **Email + OTP**  
    - Similar to the phone login, OTP will be printed in the terminal.
-<img width="1178" height="568" alt="image" src="https://github.com/user-attachments/assets/2d911a24-7b63-4e03-aef2-3229b9f0828e" />
+<img width="1010" height="514" alt="image" src="https://github.com/user-attachments/assets/ea9e6541-8795-440f-b7fc-e02287c20800" />
+
 
 ## Instructor Flow
 
@@ -112,31 +115,60 @@ Once logged in as an instructor, you can add a student to the system. The studen
 
 
 ## Dashboard Overview
-You log in using the instructor account, you will be redirected to the **Dashboard** page.
-<img width="995" height="590" alt="image" src="https://github.com/user-attachments/assets/e8b51e09-e275-4a69-bdde-f936323a1151" />
+You log in using the instructor account, you will be redirected to the **Instructor Dashboard** page.
+**Tab Manage Students**
+<img width="1910" height="950" alt="image" src="https://github.com/user-attachments/assets/427922f6-86de-4ccb-be6f-73a82919fbc5" />
+
+**Tab Manage Lesson**
+<img width="1912" height="956" alt="image" src="https://github.com/user-attachments/assets/43088708-afbc-4119-adb7-539539065c39" />
 
 
 ### Key Features
-
 - **Add Student**: Click the "Add Student" button to add a new student to the system.
-<img width="997" height="595" alt="image" src="https://github.com/user-attachments/assets/5229033c-afce-4979-b3dc-19ad78403b1a" />
+<img width="1914" height="958" alt="image" src="https://github.com/user-attachments/assets/4ede5d67-2dac-494b-b11d-c1a34286af55" />
+
 
 - **Student Invitation**: After being added, the student will automatically receive an email containing a registration link.
-<img width="667" height="341" alt="image" src="https://github.com/user-attachments/assets/261789f4-d38c-4fd7-a1dd-56c364608534" />
+<img width="1421" height="292" alt="image" src="https://github.com/user-attachments/assets/87977e91-ceff-485a-9120-fcd5175b8265" />
+
 
 - **Account Creation**: When the student clicks the link, they will be redirected to a phone number verification page, followed by a form to enter their username and password.
-<img width="994" height="451" alt="image" src="https://github.com/user-attachments/assets/69ce7977-f64c-4ae3-931a-70c8a60f5205" />
-<img width="994" height="592" alt="image" src="https://github.com/user-attachments/assets/417447b1-483f-4a23-8584-0c59687a09d9" />
+<img width="1011" height="493" alt="image" src="https://github.com/user-attachments/assets/f4cc8c86-ae11-4cb6-b277-746a1433d69f" />
+<img width="1003" height="525" alt="image" src="https://github.com/user-attachments/assets/0aba623e-6853-4788-b66b-784a7310d9bb" />
+<img width="1007" height="526" alt="image" src="https://github.com/user-attachments/assets/5fd1ee6c-5ba8-423b-8cb0-5477a01de672" />
 
   - Passwords are securely **hashed** in the database to ensure user security.
 <img width="1020" height="544" alt="image" src="https://github.com/user-attachments/assets/cac5c01e-c54f-4a39-ad3a-2cdb8a9e3e97" />
 
 - **Lesson Management**: The instructor can view which lesson each student is currently enrolled in and track their progress (whether they have completed the lesson or not).
-<img width="1031" height="562" alt="image" src="https://github.com/user-attachments/assets/661f0a1b-0174-48a9-a8db-a01a8357c28f" />
+<img width="1908" height="954" alt="image" src="https://github.com/user-attachments/assets/b1f90d82-347a-4a9f-beba-c234cecb785f" />
+Then, you can chosse and drop lesson to student to assign lesson for them.
+<img width="1914" height="950" alt="image" src="https://github.com/user-attachments/assets/ac9216a5-d8ce-4a15-afde-8e3f94e106f3" />
 
 - **Chat Functionality**: An instructor can click the chat button to view the list of students and open a chatbox to communicate with them directly. But it's not really word stably
-<img width="855" height="487" alt="image" src="https://github.com/user-attachments/assets/0d92b06c-589a-48c5-9e82-35f00118808e" />
-<img width="1011" height="548" alt="image" src="https://github.com/user-attachments/assets/2187b2a3-1a02-4607-8294-934604ef6396" />
+<img width="1913" height="949" alt="image" src="https://github.com/user-attachments/assets/00fa25c4-f749-4af2-8d82-89621e6a3797" />
+
+
+You log in using the instructor account, you will be redirected to the **Student Dashboard** page.
+**Tab Manage Lesson**
+<img width="1908" height="954" alt="image" src="https://github.com/user-attachments/assets/05ab422b-8688-410a-9a93-26c78c7c2293" />
+
+
+**Tab Edit Profile**
+<img width="1006" height="586" alt="image" src="https://github.com/user-attachments/assets/d962e8d6-029a-45c5-a15f-74c25f57cdf9" />
+
+
+
+### Key Features
+- **Learn with video**: Youtube video is embedded in this website, student can learn in website.
+<img width="1910" height="949" alt="image" src="https://github.com/user-attachments/assets/6a736dcc-d15f-4a9f-951c-6ba9c5755c12" />
+
+When they learned, they can press Mark as done button to notificate to instructor they done this lesson. Icon after student done lesson move to green.
+<img width="1911" height="954" alt="image" src="https://github.com/user-attachments/assets/be8c224f-fd2d-40fb-8973-4d7530724871" />
+
+
+- **Chat with instructor**: They also can chat with their instuctor
+<img width="1907" height="946" alt="image" src="https://github.com/user-attachments/assets/cc9e7d84-1d9f-450b-8003-a693e8777084" />
 
 Back to Backend, api document I saved in this Google Doc. If you want to check my api, please access this:
 https://docs.google.com/document/d/1Wx8SMe91fereyV-xictBxUaVFkEiWtxg1t1HpqiMTFs/edit?usp=sharing
