@@ -9,6 +9,7 @@ function validatePhone(field = 'phone', source = 'body') {
 
     if (!data) {
       return res.status(400).json({
+        success: false,
         message: `Missing data '${source}'`
       });
     }
@@ -24,6 +25,7 @@ function validatePhone(field = 'phone', source = 'body') {
 
     if (!raw || typeof raw !== 'string') {
       return res.status(400).json({
+        success: false,
         message: `'${field}' is required and must be a string`
       });
     }
@@ -38,12 +40,14 @@ function validatePhone(field = 'phone', source = 'body') {
         : parsePhoneNumberFromString(raw, defaultCountry);
     } catch {
       return res.status(400).json({
+        success: false,
         message: `Invalid phone format: '${raw}'`
       });
     }
 
     if (!phone || !phone.isValid()) {
       return res.status(400).json({
+        success: false,
         message: `Invalid phone number: '${raw}'`
       });
     }

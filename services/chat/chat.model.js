@@ -27,31 +27,34 @@ class ChatModel {
   }
 
   static async getChatHistory(senderId, receiverId) {
-    try {
-      if (!senderId || !receiverId) {
-        throw new Error("Sender ID and Receiver ID are required.");
+  try {
+    const chatRef = db.ref("chat");
+    const snapshot = await chatRef.once("value");
+
+    const conversations = [];
+
+    snapshot.forEach((chatSnapshot) => {
+      const chatId = chatSnapshot.key;
+
+      if ((chatId.includes(senderId) && chatId.includes(receiverId))) {
+        const messages = [];
+        chatSnapshot.forEach((msgSnap) => {
+          messages.push(msgSnap.val());
+        });
+
+        conversations.push({
+          chatId,
+          messages
+        });
       }
+    });
 
-      const chatRef = db.ref("chat");
-      const snapshot = await chatRef.orderByChild("timestamp").startAt(0).once("value");
-
-      const chatHistory = [];
-
-      snapshot.forEach((chat) => {
-        const chatData = chat.val();
-        if (
-          (chatData.sender === senderId && chatData.receiver === receiverId) ||
-          (chatData.sender === receiverId && chatData.receiver === senderId)
-        ) {
-          chatHistory.push(chatData);
-        }
-      });
-
-      return chatHistory;
-    } catch (error) {
-      throw new Error("Error fetching chat history: " + error.message);
-    }
+    return conversations;
+  } catch (error) {
+    throw new Error("Error fetching chat history: " + error.message);
   }
+}
+
 
   static async checkChatExists(senderId, receiverId) {
     const chatId = createChatId(senderId, receiverId);

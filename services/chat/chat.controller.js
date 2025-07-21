@@ -2,36 +2,31 @@ const ChatModel = require("./chat.model");
 
 class ChatController {
   static async getChatHistory(req, res) {
-    const { senderId, receiverId } = req.query;
+  const { senderId, receiverId } = req.query;
 
-    try {
-      if (!receiverId) {
-        return res.status(400).json({
-          success: false,
-          message: "receiverId is required."
-        });
-      }
-
-      let chatHistory;
-
-      if (senderId) {
-        chatHistory = await ChatModel.getChatHistory(senderId, receiverId);
-      } else {
-        chatHistory = await ChatModel.getAllConversations(receiverId);
-      }
-
-      return res.status(200).json({
-        success: true,
-        message: "Chat history retrieved successfully.",
-        data: chatHistory
-      });
-    } catch (error) {
-      return res.status(500).json({
+  try {
+    if (!senderId || !receiverId) {
+      return res.status(400).json({
         success: false,
-        message: error.message
+        message: "senderId and receiverId are required."
       });
     }
+
+    let chatHistory = await ChatModel.getChatHistory(senderId, receiverId);
+
+    return res.status(200).json({
+      success: true,
+      message: "Chat history retrieved successfully.",
+      data: chatHistory
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
   }
+}
+
 
   static async sendMessage(req, res) {
     const { senderId, receiverId, message } = req.body;
